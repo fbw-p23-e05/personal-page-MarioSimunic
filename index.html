@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Simunic</title>
+    <style>
+        body {
+            background-image: url(https://images4.alphacoders.com/601/601832.jpg);
+            background-size: cover;
+            color: #22223b;
+        }
+
+        h1 {
+            text-align: center;
+            color: #c9ada7;
+        }
+
+        h2 {
+            color: blue;
+            text-align: center;
+        }
+
+        .div1 {
+            border: 2px solid #22223b;
+            border-radius: 10%;
+            margin: 180px 145px;
+            height: 300px;
+            width: 300px;
+            display: inline-block;
+            transition: box-shadow .5s;
+            text-align: center;
+        }
+
+        .div1:hover {
+            box-shadow: 0 0 20px rgba(33, 33, 33, .2);
+            border-color: #9a8c98;
+        }
+
+        .div2 {
+            border: 2px dotted blue;
+            border-radius: 20%;
+            margin: 5px;
+            padding: 10px;
+        }
+
+        .form {
+            position: absolute;
+            left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to Mario's page</h1>
+    <div class="div1">
+        <div class="div2">
+            <h2>Fav Websites</h2>
+        </div>
+        <div class="div2">
+            <p><a href="https://www.google.de/">Google</a></p>
+            <p><a href="https://www.youtube.com/">Youtube</a></p>
+            <p><a href="https://www.facebook.com/">Facebook</a></p>
+            <p>...</p>
+        </div>
+    </div>
+    <div class="div1">
+        <div class="div2">
+            <h2>About me</h2>
+        </div>
+        <div class="div2">
+            <p>Age: 40</p>
+            <p>Homeland: Croatia</p>
+            <p>Occupation: DCI student</p>
+            <p>Hobbies: movies, video games, football</p>
+        </div>
+    </div>
+    <div class="div1">
+        <div class="div2">
+            <h2>Fav Destinations</h2>
+        </div>
+        <div class="div2">
+            <p>Belgium</p>
+            <p>Austria</p>
+            <p>Netherlands</p>
+            <p>Denmark</p>
+        </div>
+    </div>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="message">Message:</label>
+        <br>
+        <textarea name="message" id="message" cols="60" rows="5" required></textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
